@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sam-dev portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000000;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            padding: 20px;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .terminal {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .line {
+            margin-bottom: 8px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .prompt {
+            color: #00ff00;
+        }
+
+        .user-input {
+            color: #00ffff;
+            font-weight: bold;
+        }
+
+        .output {
+            color: #00ff00;
+        }
+
+        .header-text {
+            color: #00ff00;
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        .menu {
+            color: #ffff00;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .menu-item {
+            display: inline-block;
+            margin: 0 15px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .menu-item:hover {
+            background: #00ff00;
+            color: #000000;
+        }
+
+        .section {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .divider {
+            color: #00ff00;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .terminal-form {
+  max-width: 520px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 4px 0;
+}
+
+.prompt {
+  min-width: 70px;
+}
+
+.input-field.inline {
+  flex: 1;
+}
+
+.input-field.block {
+  width: 100%;
+}
+
+textarea.input-field {
+  resize: none;
+}
+
+.button-line {
+  margin-top: 8px;
+  gap: 12px;
+}
+
+        .input-field {
+            background: transparent;
+            border: none;
+            color: #00ffff;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            outline: none;
+            width: 100%;
+        }
+
+        .input-field::placeholder {
+            color: #008080;
+        }
+
+        .button-line {
+            margin-top: 15px;
+        }
+
+        .btn {
+            background: transparent;
+            border: 1px solid #00ff00;
+            color: #00ff00;
+            padding: 5px 15px;
+            margin-right: 10px;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+        }
+
+        .btn:hover {
+            background: #00ff00;
+            color: #000000;
+        }
+
+        .project-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        .project-name {
+            color: #ffff00;
+        }
+
+        .project-desc {
+            color: #00ff00;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        .project-tags {
+            color: #00ffff;
+            font-size: 12px;
+            margin-left: 20px;
+            margin-top: 3px;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 16px;
+            background: #00ff00;
+            margin-left: 3px;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 49% { opacity: 1; }
+            50%, 100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="header-text">
+            Sam-Dev Terminal v1.0<br>
+            Copyright Sam-Dev<br>
+            <br>
+        </div>
+
+        <div class="menu" style="border-top: 1px solid #00ff00; border-bottom: 1px solid #00ff00; padding: 10px;">
+            <span class="menu-item" onclick="showSection('work')">1) PORTFOLIO</span>
+            <span class="menu-item" onclick="showSection('about')">2) ABOUT</span>
+            <span class="menu-item" onclick="showSection('contact')">3) CONTACT</span>
+        </div>
+
+        <!-- WORK SECTION -->
+        <div id="work" class="section active">
+            <div class="line"><span class="prompt">C:\samdev></span> <span class="user-input">dir /s /b</span></div>
+            <div class="line"><span class="output"> Volume in drive C is PROJECTS</span></div>
+            <div class="line"><span class="output"> Directory of C:\portfolio\work</span></div>
+
+<!-- HERE -->
+<div class="project-card" data-category="web">
+  <div class="project-header">
+    <h3 class="project-title">APStud</h3>
+    <span class="project-status status-active">Active</span>
+  </div>
+  <p class="project-description">Educational platform and study resource hub.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">Education</span>
+    <span class="tech-badge">Web</span>
+  </div>
+  <a href="https://apstud.samstack.site" class="project-link">View Project →</a>
+</div>
+
+<div class="project-card" data-category="web">
+  <div class="project-header">
+    <h3 class="project-title">Data Entry</h3>
+    <span class="project-status status-active">Active</span>
+  </div>
+  <p class="project-description">Internal tool for database management and entry.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">Database</span>
+    <span class="tech-badge">Tool</span>
+  </div>
+  <a href="https://dataentry.samstack.site" class="project-link">View Project →</a>
+</div>
+
+<div class="project-card" data-category="web">
+  <div class="project-header">
+    <h3 class="project-title">Deals</h3>
+    <span class="project-status status-active">Active</span>
+  </div>
+  <p class="project-description">MidmanShop deal aggregator and shopping tracker.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">E-commerce</span>
+    <span class="tech-badge">App</span>
+  </div>
+  <a href="https://deals.samstack.site" class="project-link">View Project →</a>
+</div>
+
+<div class="project-card" data-category="web">
+  <div class="project-header">
+    <h3 class="project-title">Portfo</h3>
+    <span class="project-status status-active">Active</span>
+  </div>
+  <p class="project-description">Main professional portfolio and landing page.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">Web</span>
+    <span class="tech-badge">Static</span>
+  </div>
+  <a href="https://www.samstack.site" class="project-link">View Project →</a>
+</div>
+
+<div class="project-card" data-category="web">
+  <div class="project-header">
+    <h3 class="project-title">Project Adithya</h3>
+    <span class="project-status status-active">Active</span>
+  </div>
+  <p class="project-description">Specialized healthcare or donation tracking module.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">Healthcare</span>
+    <span class="tech-badge">External</span>
+  </div>
+  <a href="https://projectadithya.samstack.site" class="project-link">View Project →</a>
+</div>
+
+<div class="project-card" data-category="web">
+  <div class="project-header">
+    <h3 class="project-title">PurgeAccount</h3>
+    <span class="project-status status-active">Active</span>
+  </div>
+  <p class="project-description">Account management and data deletion service.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">Utility</span>
+    <span class="tech-badge">Security</span>
+  </div>
+  <a href="https://purgeaccount.samstack.site" class="project-link">View Project →</a>
+</div>
+
+<div class="project-card" data-category="app">
+  <div class="project-header">
+    <h3 class="project-title">Secret Santa</h3>
+    <span class="project-status status-active">Active</span>
+  </div>
+  <p class="project-description">Seasonal application for randomizing gift exchanges.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">Web App</span>
+    <span class="tech-badge">Algorithm</span>
+  </div>
+  <a href="https://secretsanta.samstack.site" class="project-link">View Project →</a>
+</div>
+
+<div class="project-card" data-category="api">
+  <div class="project-header">
+    <h3 class="project-title">Adithyas API</h3>
+    <span class="project-status status-active">Online</span>
+  </div>
+  <p class="project-description">Specialized API services for Project Adithya.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">REST API</span>
+    <span class="tech-badge">Node.js</span>
+  </div>
+  <a href="https://adithyasapi.samstack.site/api/health" class="project-link">Health Check →</a>
+</div>
+
+<div class="project-card" data-category="api">
+  <div class="project-header">
+    <h3 class="project-title">Main API</h3>
+    <span class="project-status status-active">Online</span>
+  </div>
+  <p class="project-description">Core backend services powered by .NET.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">.NET</span>
+    <span class="tech-badge">Backend</span>
+  </div>
+  <a href="https://api.samstack.site/api/test" class="project-link">API Test →</a>
+</div>
+
+<div class="project-card" data-category="legal">
+  <div class="project-header">
+    <h3 class="project-title">Privacy Policy</h3>
+    <span class="project-status status-active">Static</span>
+  </div>
+  <p class="project-description">Legal documentation and data protection policies.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">Legal</span>
+    <span class="tech-badge">Docs</span>
+  </div>
+  <a href="https://www.samstack.site/privacy" class="project-link">Read Policy →</a>
+</div>
+
+<div class="project-card" data-category="infra">
+  <div class="project-header">
+    <h3 class="project-title">DVR (ZoneMinder)</h3>
+    <span class="project-status status-active">Monitoring</span>
+  </div>
+  <p class="project-description">Surveillance and security camera management system.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">CCTV</span>
+    <span class="tech-badge">Storage</span>
+  </div>
+  <a href="https://dvr.samstack.site" class="project-link">View Console →</a>
+</div>
+
+<div class="project-card" data-category="infra">
+  <div class="project-header">
+    <h3 class="project-title">Git Status</h3>
+    <span class="project-status status-active">Active</span>
+  </div>
+  <p class="project-description">GitHub repository status and Upptime logs.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">CI/CD</span>
+    <span class="tech-badge">Git</span>
+  </div>
+  <a href="https://status.samstack.site" class="project-link">View Status →</a>
+</div>
+
+<div class="project-card" data-category="infra">
+  <div class="project-header">
+    <h3 class="project-title">Server Console</h3>
+    <span class="project-status status-active">System</span>
+  </div>
+  <p class="project-description">Direct server management via Ubuntu Cockpit.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">Ubuntu</span>
+    <span class="tech-badge">SSH</span>
+  </div>
+  <a href="https://debug.samstack.site" class="project-link">Debug Access →</a>
+</div>
+
+<div class="project-card" data-category="monitor">
+  <div class="project-header">
+    <h3 class="project-title">Home Dashboard</h3>
+    <span class="project-status status-active">Live</span>
+  </div>
+  <p class="project-description">Central hub for all hosted network services.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">Homepage</span>
+    <span class="tech-badge">Config</span>
+  </div>
+  <a href="https://homepage.samstack.site" class="project-link">Open Dashboard →</a>
+</div>
+
+<div class="project-card" data-category="monitor">
+  <div class="project-header">
+    <h3 class="project-title">LiveStatus</h3>
+    <span class="project-status status-active">Uptime</span>
+  </div>
+  <p class="project-description">Real-time uptime monitoring via Uptime Kuma.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">Kuma</span>
+    <span class="tech-badge">Alerts</span>
+  </div>
+  <a href="https://livestatus.samstack.site" class="project-link">Live View →</a>
+</div>
+<div class="project-card" data-category="monitor">
+  <div class="project-header">
+    <h3 class="project-title">Dozzle</h3>
+    <span class="project-status status-active">Logs</span>
+  </div>
+  <p class="project-description">Real-time logs monitoring for Docker containers.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">Dozzle</span>
+    <span class="tech-badge">Logs</span>
+  </div>
+  <a href="https://livestatus.samstack.site" class="project-link">Live View →</a>
+</div>
+
+<div class="project-card" data-category="monitor">
+  <div class="project-header">
+    <h3 class="project-title">Portainer</h3>
+    <span class="project-status status-active">Admin</span>
+  </div>
+  <p class="project-description">Docker container management and orchestration UI.</p>
+  <div class="tech-stack">
+    <span class="tech-badge">Docker</span>
+    <span class="tech-badge">Containers</span>
+  </div>
+  <a href="https://console.samstack.site" class="project-link">Admin Panel →</a>
+</div>
+</div>
+
+            <!-- <div class="project-item">
+                <div class="project-name">> SOUNDWAVE_APP</div>
+                <div class="project-desc">Music streaming interface - Real-time visualizations & playback</div>
+                <div class="project-tags">[UI/UX] [APP DESIGN]</div>
+                <div class="button-line">
+                    <button class="btn" onclick="alert('Opening project...')">VIEW</button>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-name">> OCEAN_PORTAL</div>
+                <div class="project-desc">Environmental awareness platform - Data visualizations & content</div>
+                <div class="project-tags">[DEVELOPMENT] [DATA VIZ]</div>
+                <div class="button-line">
+                    <button class="btn" onclick="alert('Opening project...')">VIEW</button>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-name">> SUNSET_GALLERY</div>
+                <div class="project-desc">Photography portfolio - Lightbox galleries & print shop integration</div>
+                <div class="project-tags">[WEB DESIGN] [E-COMMERCE]</div>
+                <div class="button-line">
+                    <button class="btn" onclick="alert('Opening project...')">VIEW</button>
+                </div>
+            </div> -->
+            <div class="line"><span class="prompt">C:\samdev></span><span class="cursor"></span></div>
+
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <div id="about" class="section">
+            <div class="line"><span class="prompt">C:\samdev></span> <span class="user-input">type bio.txt</span></div>
+            <div class="divider">====================================</div>
+
+            <div class="line"><span class="output">IBTISAM</span></div>
+<div class="line"><span class="output">Computer Engineering Student | Backend & Systems</span></div>
+
+            <div class="line" style="margin-top: 15px;"><span class="output">First-year Computer Engineering student focused on backend systems,</span></div>
+            <div class="line"><span class="output">Linux-based development, and secure application infrastructure.</span></div>
+            <div class="line"><span class="output">Experienced in building and deploying backend APIs using C#, .NET,</span></div>
+            <div class="line"><span class="output">Python, and Dart/Flutter, with strong foundations in SQL and</span></div>
+            <div class="line"><span class="output">PostgreSQL-based platforms such as Firebase and Supabase.</span></div>
+            <div class="line"><span class="output">Maintains self-hosted server infrastructure and has deployed</span></div>
+            <div class="line"><span class="output">production-grade APIs with authentication, validation, and</span></div>
+            <div class="line"><span class="output">security-first design considerations.</span></div>
+            <div class="line"><span class="output">Projects are primarily proprietary and built for real institutional</span></div>
+            <div class="line"><span class="output">requirements; GitHub reflects active development, and one project</span></div>
+            <div class="line"><span class="output">is referenced by my college’s official website.</span></div>
+
+<div class="line" style="margin-top: 15px;"><span class="output">CORE SKILLS:</span></div>
+<div class="line"><span class="output">  • Backend Development & API Design</span></div>
+<div class="line"><span class="output">  • Linux Systems & Self-Hosted Infrastructure</span></div>
+<div class="line"><span class="output">  • SQL, PostgreSQL, Firebase, Supabase</span></div>
+<div class="line"><span class="output">  • Networking: DNS, Port Forwarding, VPNs, Tunneling</span></div>
+<div class="line"><span class="output">  • Security-Focused Development Practices</span></div>
+
+
+<div class="line" style="margin-top: 15px;"><span class="output">TOOLS & ENVIRONMENTS:</span></div>
+<div class="line"><span class="output">  • VS Code, Visual Studio 2022</span></div>
+<div class="line"><span class="output">  • Vim, Nano</span></div>
+<div class="line"><span class="output">  • Android Studio</span></div>
+<div class="line"><span class="output">  • Git, GitHub</span></div>
+
+
+
+            <div class="divider">====================================</div>
+
+                <div class="line"><span class="prompt">C:\samdev></span><span class="cursor"></span></div>
+
+        </div>
+
+        <!-- CONTACT SECTION -->
+        <div id="contact" class="section">
+            <div class="line"><span class="prompt">C:\portfolio></span> <span class="user-input">edit contact.ini</span></div>
+
+            <div class="line" style="margin-top: 20px;">
+                <span class="output">--- CONTACT FORM ---</span>
+            </div>
+
+<form onsubmit="handleSubmit(event)" class="terminal-form">
+  <div class="line">
+    <span class="prompt">NAME</span>
+    <input type="text" class="input-field inline" placeholder="your name" id="name">
+  </div>
+
+  <div class="line">
+    <span class="prompt">EMAIL</span>
+    <input type="email" class="input-field inline" placeholder="you@example.com" id="email">
+  </div>
+
+  <div class="line">
+    <span class="prompt">MESSAGE</span>
+
+  </div>
+    <div class="line">
+    <textarea
+      class="input-field block"
+      rows="3"
+      placeholder="briefly describe your message"
+      id="message"></textarea>
+  </div>
+
+  <div class="line button-line">
+    <button type="submit" class="btn">SEND</button>
+    <button type="reset" class="btn">CLEAR</button>
+  </div>
+</form>
+
+
+            <div class="divider">====================================</div>
+
+            <div class="line"><span class="output">DIRECT CONTACT:</span></div>
+            <div class="line"><span class="output">  EMAIL: contact@samstack.site</span></div>
+            <div class="line"><span class="output">  GITHUB: github.com/Sam-Builds</span></div>
+            <div class="line"><span class="output">  LINKEDIN: linkedin.com/in/sam-devstack</span></div>
+
+            <div class="line" style="margin-top: 20px;">
+                <span class="prompt">C:\portfolio></span><span class="cursor"></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(s => s.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            alert(`Message sent successfully!\n\nThank you ${name || 'friend'}, I'll get back to you soon.`);
+            e.target.reset();
+        }
+
+    </script>
+</body>
+</html>

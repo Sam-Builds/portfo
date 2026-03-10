@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - YEN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f5f9fc 0%, #e8f4f8 100%);
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4a90b8 0%, #5ba3c8 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(74, 144, 184, 0.1);
+        }
+
+        .header-content h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .header-content p {
+            font-size: 1.1em;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .effective-date {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 8px 16px;
+            border-radius: 20px;
+            margin-top: 20px;
+            font-size: 0.9em;
+            backdrop-filter: blur(10px);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .intro-section {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 12px rgba(74, 144, 184, 0.08);
+            border-left: 4px solid #4a90b8;
+        }
+
+        .intro-section p {
+            color: #34495e;
+            font-size: 1.05em;
+        }
+
+        .intro-section strong {
+            color: #4a90b8;
+            font-weight: 600;
+        }
+
+        .policy-section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(74, 144, 184, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .policy-section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(74, 144, 184, 0.12);
+        }
+
+        .policy-section h2 {
+            color: #4a90b8;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #e8f4f8;
+        }
+
+        .policy-section h3 {
+            color: #5ba3c8;
+            font-size: 1.2em;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .policy-section p {
+            color: #34495e;
+            margin-bottom: 16px;
+            line-height: 1.9;
+        }
+
+        .policy-section ul {
+            list-style: none;
+            margin: 16px 0 24px 0;
+        }
+
+        .policy-section li {
+            padding: 10px 0 10px 28px;
+            position: relative;
+            color: #34495e;
+        }
+
+        .policy-section li:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 14px;
+            width: 8px;
+            height: 8px;
+            background: #5ba3c8;
+            border-radius: 50%;
+        }
+
+        .highlight {
+            background: #f0f7fb;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #5ba3c8;
+            margin: 20px 0;
+        }
+
+        .highlight p {
+            color: #34495e;
+            margin: 0;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #4a90b8 0%, #5ba3c8 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 16px;
+            margin-top: 60px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(74, 144, 184, 0.15);
+        }
+
+        .contact-section h2 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 12px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .contact-item p:first-child {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            display: inline-block;
+            transition: background 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d0e4f2, transparent);
+            margin: 30px 0;
+        }
+
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 2em;
+            }
+
+            .container {
+                padding: 30px 15px;
+            }
+
+            .policy-section {
+                padding: 25px;
+            }
+
+            .policy-section h2 {
+                font-size: 1.4em;
+            }
+
+            .contact-info {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Privacy Policy</h1>
+            <p>Your privacy matters to us</p>
+            <div class="effective-date">Effective Date: January 1, 2026</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="intro-section">
+            <p>This privacy policy outlines how <strong>YEN</strong>, operated by <strong>Ibtisam / SamStack</strong>, collects, uses, and protects your personal information. We are committed to maintaining transparency and ensuring your data security.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>Information We Collect</h2>
+            <p>We collect only the personal information necessary to provide you with the best possible experience:</p>
+            <ul>
+                <li>Email address (used for user authentication)</li>
+                <li>User account identifiers provided by Firebase Authentication</li>
+            </ul>
+            <div class="highlight">
+                <p>Passwords are handled securely through Firebase Authentication and are never stored or directly accessible by us. Your password security is protected by industry-leading encryption standards.</p>
+            </div>
+        </div>
+
+        <div class="policy-section">
+            <h2>How We Use Your Information</h2>
+            <p>Your personal information is used exclusively for the following purposes:</p>
+            <ul>
+                <li>User authentication and account access</li>
+                <li>Account management and security</li>
+                <li>Providing core app functionality</li>
+                <li>Processing account deletion requests upon user request</li>
+            </ul>
+            <p>We do not sell, share, or use your information for any other purposes without your explicit consent.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>Third-Party Services</h2>
+            <p>YEN utilizes Google Firebase for authentication and data management. Firebase is a trusted service that complies with Google's stringent privacy and security standards. Firebase may collect technical information necessary for authentication, security, and service reliability.</p>
+            <div class="highlight">
+                <p>We have implemented appropriate safeguards to ensure that any third-party services we use maintain the same level of data protection that we do.</p>
+            </div>
+        </div>
+
+        <div class="policy-section">
+            <h2>Data Retention and Deletion</h2>
+            <p>Your data is retained only for as long as necessary to provide you with our services. You have complete control over your information:</p>
+            <ul>
+                <li>You may request deletion of your account at any time</li>
+                <li>Upon deletion, all authentication data is permanently removed from Firebase Authentication</li>
+                <li>Associated user data is securely purged from our systems</li>
+            </ul>
+            <p>To request account deletion, please contact us using the information provided below.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>Children's Privacy Protection</h2>
+            <p>YEN is not intended for use by individuals under the age of 13. We do not knowingly collect personal data from children. If we become aware that a child under 13 has provided us with personal information, we will take immediate action to delete such information and terminate the child's account.</p>
+            <p>Parents or guardians who believe their child has provided information to YEN are encouraged to contact us immediately.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>Your Privacy Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access the personal information we hold about you</li>
+                <li>Request correction of inaccurate data</li>
+                <li>Request deletion of your account and associated data</li>
+                <li>Withdraw consent for data processing at any time</li>
+            </ul>
+            <p>To exercise any of these rights, please contact us using the information provided in the Contact section below.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>Security Measures</h2>
+            <p>We implement industry-standard security practices to protect your information, including encryption, secure authentication protocols, and regular security assessments. However, no system is entirely risk-free. We encourage you to maintain the confidentiality of your password and report any unauthorized access immediately.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, regulations, or other factors. The effective date will be updated accordingly. We encourage you to review this policy periodically to stay informed about how we protect your information.</p>
+        </div>
+
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <p>If you have questions, concerns, or requests regarding this Privacy Policy or your personal data, we are here to help.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <p>Email</p>
+                    <a href="mailto:contact@samstack.site">contact@samstack.site</a>
+                </div>
+                <div class="contact-item">
+                    <p>Website</p>
+                    <a href="https://samstack.site" target="_blank">samstack.site</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>YEN Privacy Policy. All rights reserved. Last updated January 1, 2023.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,245 @@
+{
+  "projects": [
+    {
+      "title": "Portfo",
+      "status": "Active",
+      "category": "web",
+      "description": "Main professional portfolio and landing page.",
+      "techStack": ["Web", "Static"],
+      "link": "https://www.samstack.site",
+      "linkLabel": "View Project →"
+    },
+    {
+      "title": "APStud",
+      "status": "Active",
+      "category": "web",
+      "description": "Educational platform and study resource hub.",
+      "techStack": ["Education", "Web"],
+      "link": "https://apstud.samstack.site",
+      "linkLabel": "View Project →"
+    },
+    {
+      "title": "Data Entry",
+      "status": "Active",
+      "category": "web",
+      "description": "Internal tool for database management and entry.",
+      "techStack": ["Database", "Tool"],
+      "link": "https://dataentry.samstack.site",
+      "linkLabel": "View Project →"
+    },
+    {
+      "title": "PurgeAccount",
+      "status": "Active",
+      "category": "web",
+      "description": "Account management and data deletion service.",
+      "techStack": ["Utility", "Security"],
+      "link": "https://purgeaccount.samstack.site",
+      "linkLabel": "View Project →"
+    },
+    {
+      "title": "Secret Santa",
+      "status": "Active",
+      "category": "app",
+      "description": "Seasonal application for randomizing gift exchanges.",
+      "techStack": ["Web App", "Algorithm"],
+      "link": "https://secretsanta.samstack.site",
+      "linkLabel": "View Project →"
+    },
+    {
+      "title": "Deals",
+      "status": "Active",
+      "category": "web",
+      "description": "MidmanShop deal aggregator and shopping tracker.",
+      "techStack": ["E-commerce", "App"],
+      "link": "https://deals.samstack.site",
+      "linkLabel": "View Project →"
+    },
+    {
+      "title": "Project Adithya",
+      "status": "Active",
+      "category": "web",
+      "description": "Specialized healthcare or donation tracking module.",
+      "techStack": ["Healthcare", "External"],
+      "link": "https://projectadithya.samstack.site",
+      "linkLabel": "View Project →"
+    },
+    {
+      "title": "Main API",
+      "status": "Online",
+      "category": "api",
+      "description": "Core backend services powered by .NET.",
+      "techStack": [".NET", "Backend"],
+      "link": "https://api.samstack.site/api/test",
+      "linkLabel": "API Test →"
+    },
+    {
+      "title": "Adithyas API",
+      "status": "Online",
+      "category": "api",
+      "description": "Specialized API services for Project Adithya.",
+      "techStack": ["REST API", "Node.js"],
+      "link": "https://adithyasapi.samstack.site/api/health",
+      "linkLabel": "Health Check →"
+    },
+    {
+      "title": "Privacy Policy",
+      "status": "Static",
+      "category": "legal",
+      "description": "Legal documentation and data protection policies.",
+      "techStack": ["Legal", "Docs"],
+      "link": "https://www.samstack.site/privacy",
+      "linkLabel": "Read Policy →"
+    },
+    {
+      "title": "DVR (ZoneMinder)",
+      "status": "Monitoring",
+      "category": "infra",
+      "description": "Surveillance and security camera management system.",
+      "techStack": ["CCTV", "Storage"],
+      "link": "https://dvr.samstack.site",
+      "linkLabel": "View Console →"
+    },
+    {
+      "title": "Server Console",
+      "status": "System",
+      "category": "infra",
+      "description": "Direct server management via Ubuntu Cockpit.",
+      "techStack": ["Ubuntu", "SSH"],
+      "link": "https://debug.samstack.site",
+      "linkLabel": "Debug Access →"
+    },
+    {
+      "title": "Git Status",
+      "status": "Active",
+      "category": "infra",
+      "description": "GitHub repository status and Upptime logs.",
+      "techStack": ["CI/CD", "Git"],
+      "link": "https://status.samstack.site",
+      "linkLabel": "View Status →"
+    },
+    {
+      "title": "LiveStatus",
+      "status": "Uptime",
+      "category": "monitor",
+      "description": "Real-time uptime monitoring via Uptime Kuma.",
+      "techStack": ["Kuma", "Alerts"],
+      "link": "https://livestatus.samstack.site",
+      "linkLabel": "Live View →"
+    },
+    {
+      "title": "Dozzle",
+      "status": "Logs",
+      "category": "monitor",
+      "description": "Real-time logs monitoring for Docker containers.",
+      "techStack": ["Dozzle", "Logs"],
+      "link": "https://logs.samstack.site",
+      "linkLabel": "Live View →"
+    },
+    {
+      "title": "Portainer",
+      "status": "Admin",
+      "category": "monitor",
+      "description": "Docker container management and orchestration UI.",
+      "techStack": ["Docker", "Containers"],
+      "link": "https://console.samstack.site",
+      "linkLabel": "Admin Panel →"
+    },
+    {
+      "title": "Home Dashboard",
+      "status": "Live",
+      "category": "monitor",
+      "description": "Central hub for all hosted network services.",
+      "techStack": ["Homepage", "Config"],
+      "link": "https://homepage.samstack.site",
+      "linkLabel": "Open Dashboard →"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages",
+      "items": [
+        { "name": "JavaScript / TypeScript", "level": "Production-ready" },
+        { "name": "Rust", "level": "Production-ready" },
+        { "name": "C#", "level": "Comfortable" },
+        { "name": "Python", "level": "Production-ready" },
+        { "name": "Visual Basic", "level": "Comfortable" }
+      ]
+    },
+    {
+      "category": "Frontend",
+      "items": [
+        { "name": ".NET/WPF/MVVM", "level": "Production-ready" },
+        { "name": "Flutter/Dart", "level": "Production-ready" },
+        { "name": "CSS", "level": "Production-ready" },
+        { "name": "Accessibility basics", "level": "Comfortable" }
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        { "name": "Firebase / PostgreSQL", "level": "Production-ready" },
+        { "name": "C#.NET Servers & API Endpoints", "level": "Production-ready" },
+        { "name": "REST / Auth flows", "level": "Production-ready" }
+      ]
+    },
+    {
+      "category": "Systems / DevOps",
+      "items": [
+        { "name": "Linux systems / Self-Hosted Infrastructure", "level": "Production-ready" },
+        { "name": "Shell scripting", "level": "Production-ready" },
+        { "name": "Networking basics", "level": "Comfortable" },
+        { "name": "Tunneling / VPNs / DNS", "level": "Comfortable" },
+        { "name": "Disk encryption & Data management", "level": "Comfortable" }
+      ]
+    },
+    {
+      "category": "Tools",
+      "items": [
+        { "name": "Git", "level": "Production-ready" },
+        { "name": "Visual Studio 2026", "level": "Comfortable" },
+        { "name": "Vim / Nano / Micro", "level": "Comfortable" },
+        { "name": "Android Studio", "level": "Comfortable" },
+        { "name": "Figma", "level": "Comfortable" },
+        { "name": "VS Code", "level": "Production-ready" }
+      ]
+    }
+  ],
+  "aboutMe": [
+    "I like building systems that are difficult to break, fast to use, and predictable. Good software shouldn’t surprise you with random failures at 3 AM. It should just work.",
+
+    "Most of what I care about comes down to performance and security. Software should respect the user’s time and privacy. That means avoiding unnecessary complexity, minimizing bloat, and thinking about threat models before writing code.",
+
+    "I tend to learn by breaking things. My Linux installs have died more times than I can count. Each time I ended up learning something about bootloaders, filesystems, or kernel behavior. I write these things down mostly so I don’t forget them later." ,  
+
+"At the end of the day I just like the craft: understanding systems, writing clean code, and solving problems that actually matter. I’m not very interested in shipping features nobody needs or adding complexity for its own sake.  "],
+  "techPhilosophy": [
+    "Security before convenience",
+    "Simple > clever",
+    "Understand the system before abstracting it"
+  ],
+  "experience": [
+    {
+      "date@": "2023 - Present",
+      "title@": "Freelance Full-stack Developer",
+      "description@": "Building secure, performant web applications for clients across fintech and healthcare. Specialized in implementing zero-knowledge architectures and end-to-end encryption."
+    }
+  ],
+  "blogs": [
+    {
+      "title@": "Fixing a Broken Bootloader: A GRUB Recovery Story",
+      "excerpt@": "What I learned after accidentally wiping my boot partition and having to manually reinstall GRUB from a live USB...",
+      "date@": "January 2025",
+      "readTime@": "8 min read",
+      "icon@": "📝"
+    }
+    
+  ],
+  "papers": [
+    {
+      "title": "Process Checkpointing in Linux and the Architectural Barriers in Windows",
+      "description": "Short investigation comparing how CRIU works internally and why the Windows process model makes this difficult to replicate",
+      "downloadLink": "https://www.samstack.site/downloads/papers/CheckpointingInvestigation.pdf"
+    }
+
+  ]
+}
