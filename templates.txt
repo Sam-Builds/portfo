@@ -1,0 +1,17 @@
+ "experience": [
+    {
+      "date@": "2023 - Present",
+      "title@": "Freelance Full-stack Developer",
+      "description@": "Building secure, performant web applications for clients across fintech and healthcare. Specialized in implementing zero-knowledge architectures and end-to-end encryption."
+    }
+  ],
+  "blogs": [
+    {
+      "title@": "Fixing a Broken Bootloader: A GRUB Recovery Story",
+      "excerpt@": "What I learned after accidentally wiping my boot partition and having to manually reinstall GRUB from a live USB...",
+      "date@": "January 2025",
+      "readTime@": "8 min read",
+      "icon@": "📝"
+    }
+    
+  ],
