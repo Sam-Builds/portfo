@@ -158,49 +158,49 @@
     {
       "category": "Languages",
       "items": [
-        { "name": "JavaScript / TypeScript", "level": "Production-ready" },
-        { "name": "Rust", "level": "Production-ready" },
-        { "name": "C#", "level": "Comfortable" },
-        { "name": "Python", "level": "Production-ready" },
-        { "name": "Visual Basic", "level": "Comfortable" }
+        { "name": "JavaScript / TypeScript", "level": " " },
+        { "name": "Rust", "level": " " },
+        { "name": "C#", "level": " " },
+        { "name": "Python", "level": " " },
+        { "name": "Visual Basic", "level": " " }
       ]
     },
     {
       "category": "Frontend",
       "items": [
-        { "name": ".NET/WPF/MVVM", "level": "Production-ready" },
-        { "name": "Flutter/Dart", "level": "Production-ready" },
-        { "name": "CSS", "level": "Production-ready" },
-        { "name": "Accessibility basics", "level": "Comfortable" }
+        { "name": ".NET/WPF/MVVM", "level": " " },
+        { "name": "Flutter/Dart", "level": " " },
+        { "name": "CSS", "level": " " },
+        { "name": "Accessibility basics", "level": " " }
       ]
     },
     {
       "category": "Backend",
       "items": [
-        { "name": "Firebase / PostgreSQL", "level": "Production-ready" },
-        { "name": "C#.NET Servers & API Endpoints", "level": "Production-ready" },
-        { "name": "REST / Auth flows", "level": "Production-ready" }
+        { "name": "Firebase / PostgreSQL", "level": " " },
+        { "name": "C#.NET Servers & API Endpoints", "level": " " },
+        { "name": "REST / Auth flows", "level": " " }
       ]
     },
     {
       "category": "Systems / DevOps",
       "items": [
-        { "name": "Linux systems / Self-Hosted Infrastructure", "level": "Production-ready" },
-        { "name": "Shell scripting", "level": "Production-ready" },
-        { "name": "Networking basics", "level": "Comfortable" },
-        { "name": "Tunneling / VPNs / DNS", "level": "Comfortable" },
-        { "name": "Disk encryption & Data management", "level": "Comfortable" }
+        { "name": "Linux systems / Self-Hosted Infrastructure", "level": " " },
+        { "name": "Shell scripting", "level": " " },
+        { "name": "Networking basics", "level": " " },
+        { "name": "Tunneling / VPNs / DNS", "level": " " },
+        { "name": "Disk encryption & Data management", "level": " " }
       ]
     },
     {
       "category": "Tools",
       "items": [
-        { "name": "Git", "level": "Production-ready" },
-        { "name": "Visual Studio 2026", "level": "Comfortable" },
-        { "name": "Vim / Nano / Micro", "level": "Comfortable" },
-        { "name": "Android Studio", "level": "Comfortable" },
-        { "name": "Figma", "level": "Comfortable" },
-        { "name": "VS Code", "level": "Production-ready" }
+        { "name": "Git", "level": " " },
+        { "name": "Visual Studio 2026", "level": " " },
+        { "name": "Vim / Nano / Micro", "level": " " },
+        { "name": "Android Studio", "level": " " },
+        { "name": "Figma", "level": " " },
+        { "name": "VS Code", "level": " " }
       ]
     }
   ],
