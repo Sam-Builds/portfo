@@ -225,5 +225,79 @@
       "downloadLink": "https://www.samstack.site/downloads/papers/CheckpointingInvestigation.pdf"
     }
 
-  ]
+  ],
+  "downloads": {
+    "title": "Downloads",
+    "description": "A central place for app builds, hosted releases, and project-specific download pages.",
+    "apps": [
+       {
+        "slug": "VTU Results Utility",
+        "title": "VTU Results Utility",
+        "status": "Available",
+        "type": "Python App",
+        "summary": "Fetch and parse VTU results.",
+        "actions": {
+          "Download VTU PDF Parser": "https://github.com/Sam-Builds/VTUResultParser/releases/latest/download/VTU_Parser.exe",
+          "Download VTU Results Downloader": "https://github.com/Sam-Builds/VTUResultParser/releases/latest/download/VTU_Parser.exe",
+          "Download VTU Results Utility (Combined)": "https://github.com/Sam-Builds/VTUResultParser/releases/latest/download/VTU_Parser.exe"
+        },
+       
+        "platforms": ["Windows"],
+        "highlights": [
+          "Process 1 or 100 PDFs at the exact same time.",
+          "All parsing happens directly on your computer. No student data is uploaded to the internet.",
+          "Automatically calculates totals, percentages, and highlights passed/failed subjects.",
+          "Designed to run smoothly even on older campus laptops."
+        ],
+        "requirements": [
+          "OS: Windows 10 or Windows 11 (64-bit)",
+           
+
+            "Storage: ~300 MB free space",
+
+            "Prerequisites: Microsoft Excel (to open the generated reports)"
+        ]
+        
+      },
+      {
+        "slug": "apstud",
+        "title": "APStud",
+        "status": "Available",
+        "type": "Study Platform",
+        "version": "Live build",
+        "updated": "January 2026",
+        "size": "Hosted",
+        "summary": "Study resource hub focused on quick access to coursework, revision material, and planning tools.",
+        "actions": {
+          "Open App": "https://apstud.samstack.site",
+          "View Project": "https://apstud.samstack.site"
+        },
+        "description": [
+          "APStud is structured as a central workspace for students who need their material organized without wasting time digging through cluttered interfaces.",
+          "The downloads page gives it a proper landing spot beside other hosted apps and leaves room for future packaged releases if needed."
+        ],
+        "platforms": ["Web", "Tablet", "Mobile Browser"],
+        "highlights": [
+          "Simple access to revision resources",
+          "Built for responsive use across devices",
+          "Designed around speed and predictability"
+        ],
+        "requirements": [
+          "Modern browser",
+          "Internet connection"
+        ],
+        "primaryAction": {
+          "label": "Open App",
+          "url": "https://apstud.samstack.site"
+        },
+        "secondaryActions": [
+          {
+            "label": "View Project",
+            "url": "https://apstud.samstack.site"
+          }
+        ],
+        "downloads": []
+      }
+    ]
+  }
 }
