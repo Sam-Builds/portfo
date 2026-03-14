@@ -240,7 +240,7 @@
     "description": "A central place for app builds, hosted releases, and project-specific download pages.",
     "apps": [
        {
-        "slug": "VTU Results Utility",
+        "slug": "VTUResultsUtility",
         "title": "VTU Results Utility",
         "status": "Available",
         "type": "Python App",
