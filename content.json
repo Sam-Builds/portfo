@@ -152,6 +152,15 @@
       "techStack": ["Homepage", "Config"],
       "link": "https://homepage.samstack.site",
       "linkLabel": "Open Dashboard →"
+    },
+        {
+      "title": "VTU Results Parser",
+      "status": "Active",
+      "category": "Python",
+      "description": "Bulk parsing of image pdfs results..",
+      "techStack": ["Python", "VTU"],
+      "link": "https://github.com/Sam-Builds/VTUResultParser/tree/main",
+      "linkLabel": "Open Repo →"
     }
   ],
   "skills": [
