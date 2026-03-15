@@ -246,9 +246,8 @@
         "type": "Python App",
         "summary": "Fetch and parse VTU results.",
         "actions": {
-          "Download VTU PDF Parser": "https://github.com/Sam-Builds/VTUResultParser/releases/latest/download/VTU_Parser.exe",
-          "Download VTU Results Downloader": "https://github.com/Sam-Builds/VTUResultParser/releases/latest/download/VTU_Parser.exe",
-          "Download VTU Results Utility (Combined)": "https://github.com/Sam-Builds/VTUResultParser/releases/latest/download/VTU_Parser.exe"
+          "Download VTU PDF Parser": "https://github.com/Sam-Builds/VTUResultParser/releases/latest/download/VTU_PDF_Parser_SETUP.exe",
+          "Download VTU Results Utility (Combined)": "https://github.com/Sam-Builds/VTUResultsUitlity/releases/latest/download/VTU_Results_Utility.exe"
         },
        
         "platforms": ["Windows"],
